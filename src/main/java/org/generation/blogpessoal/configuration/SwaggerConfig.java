@@ -2,15 +2,14 @@ package org.generation.blogpessoal.configuration;
 
 import org.springdoc.core.customizers.OpenApiCustomiser;
 import org.springframework.context.annotation.Bean;
+import io.swagger.v3.oas.models.responses.ApiResponse;
 import org.springframework.context.annotation.Configuration;
-
+import io.swagger.v3.oas.models.responses.ApiResponses;
 import io.swagger.v3.oas.models.ExternalDocumentation;
 import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Contact;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
-import io.swagger.v3.oas.models.responses.ApiResponse;
-import io.swagger.v3.oas.models.responses.ApiResponses;
 
 
 @Configuration
@@ -27,12 +26,12 @@ public class SwaggerConfig {
 					.name("Generation Brasil")
 					.url("https://brazil.generation.org/"))
 				.contact(new Contact()
-					.name("Conteudo Generation")
-					.url("https://github.com/conteudoGeneration")
-					.email("conteudogeneration@gmail.com")))
+					.name("Matheus")
+					.url("https://www.linkedin.com/in/matheus-ferreira-317b98231/")
+					.email("matheus.msftkd@gmail.com")))
 				.externalDocs(new ExternalDocumentation()
 						.description("Github")
-						.url("https://github.com/conteudoGeneration/"));
+						.url("https://github.com/MatheusMSF/"));
 	}
 	
 	@Bean
